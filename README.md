@@ -22,8 +22,7 @@ represents obstacles , S the starting point and G the goal.
 
 Each ant chooses the next node. After node selection, there is a 
 verification if all ants are at the goal. The ants repeatedly choose the next node in their vicinity until 
-every ant has reached the destination. Subsequently the pheromone values are updated (see section
-3.4.3 ). If the iteration value is not reached the ants are set back to the starting point and once more 
+every ant has reached the destination. Subsequently the pheromone values are updated. If the iteration value is not reached the ants are set back to the starting point and once more 
 commence to find a way to the goal, with the help of the updated pheromone values. When the iteration 
 value is reached, the shortest path is chosen from the last iteration.
 
@@ -34,9 +33,8 @@ value is reached, the shortest path is chosen from the last iteration.
 ### AntColony
 Basically, the AntColony class is the main actuator. The instance of this class is created in the main or 
 in the ROS file and is the only one that will exist. The corresponding API of the algorithm is the public 
-functions of the AntColony class (see 3.1). It contains all the functions that calculate the path, as well 
-as all the parameters required for that. The most important functions for path calculation are explained 
-in section 3.4.
+functions of the AntColony class. It contains all the functions that calculate the path, as well 
+as all the parameters required for that.
 It has exactly one instance, named theMap, of the GridSystem class, since access to the map 
 information is required for the route calculation. The pointer antsArray allows the accesses to the ants, 
 which were created dynamically in the function createAnts(). Just the start end end point of the Type 
@@ -78,8 +76,7 @@ single reachable node s and is represented in the code with the variable tempPro
 summation probAddition takes place. In the last step the actual probability prob will be calculated with 
 help of a for loop.
 To calculate the probability the pheromone values 𝜏𝑖,𝑗 between the current i and the potentially next 
-nodes j are retrieved. How these are stored is explained in more detail in section 3.4.3
-pheromoneUpdate(). The distance between the nodes 𝑑𝑖,𝑗 are also saved in the class Node as 
+nodes j are retrieved. The distance between the nodes 𝑑𝑖,𝑗 are also saved in the class Node as 
 isDiagonal. Only the number 1 or √2 can be stored in the variable.
 
 <img src= "https://github.com/elawy/AntColony_Project/assets/48498386/12b57bb2-352b-4f53-85bd-9685f5481c53" width="500" height="200">
