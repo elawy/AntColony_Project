@@ -39,8 +39,6 @@ It has exactly one instance, named theMap, of the GridSystem class, since access
 information is required for the route calculation. The pointer antsArray allows the accesses to the ants, 
 which were created dynamically in the function createAnts(). Just the start end end point of the Type 
 Node are, for comparison reasons, saved in AntColony.
-Figure 5: UML diagram of the algorithm
-10
 ### GridSystem
 The necessary data is transferred from the visualization program to the instance theMap. Obstacles and 
 free fields are stored in the dynamically created array grid*. In this way, the algorithm can check during 
