@@ -93,7 +93,7 @@ reduce the pheromone value with the help of the evaporation rate.
 
 The three steps are implemented in the pseudocode of the algorithm below.
 
-<img src= "https://github.com/elawy/AntColony_Project/assets/48498386/91de5e85-ba7b-4b21-a657-3437e892e9dd" width="500" height="350">
+<img src= "https://github.com/elawy/AntColony_Project/assets/48498386/91de5e85-ba7b-4b21-a657-3437e892e9dd" width="450" height="350">
 
 
 
