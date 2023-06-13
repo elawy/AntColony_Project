@@ -1,4 +1,6 @@
 # AntColony_Project
+Path planning is an essential tool of mobile robotic systems in order to achieve short and collision free paths towards a destination. Many of the solutions for more complex maps and obstacles are based on bionic algorithms like the ant colony algorithm.
+The goal is to find the best path. Therefore, a finite state of nodes is declared. An artificial ant is a sequence out of these nodes. To find the optimal sequence, mainly two formulas are used, which are explained in the following section.The construction phase and the pheromone state are the basics of the ant system.
 
 ## API 
 used in the main.cpp
